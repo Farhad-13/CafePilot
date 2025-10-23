@@ -1,0 +1,11 @@
+main.py
+data:
+    customers.json           ---->   Customer Information
+    employees.json           ---->   Employee Information
+    inventory.json           ---->   Inventory
+    purchase_invoices.json   ---->   Raw Material Purchase Invoices
+    sales_invoices.json      ---->   Product Sales Invoices
+    menu_items.csv           ---->   Menu Items
+logs:                                               
+    app.log                  ---->   Activity Logs
+    
