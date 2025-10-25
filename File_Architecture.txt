@@ -1,5 +1,8 @@
-main.py
-data:
+main.py                      ----> 
+Functions.py                 ---->               
+logger.py                    ---->
+README.md                    ---->
+data:                           
     customers.json           ---->   Customer Information
     employees.json           ---->   Employee Information
     inventory.json           ---->   Inventory
@@ -8,4 +11,3 @@ data:
     menu_items.csv           ---->   Menu Items
 logs:                                               
     app.log                  ---->   Activity Logs
-    

@@ -1,3 +1,66 @@
+from logger import *
+from Functions import *
+import os
+
+Manager_Menu = ["1. Add New Customer", "2. Edit Customer Information", "3. Add New Employee", "4. Edit Employee Information", 
+"5. Add New Item to Inventory", "6. Add Raw Materials to Inventory", "7. Raw Material Purchase Invoices Reporting", 
+"8. Sell Products", "9. Sales Invoices Reporting", "10. Add New Menu Item", "11. Edit a Menu Item", "12. Delete a Menu Item", "13. Exit"]
+
+while True:
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+    for i in Manager_Menu:
+        print(i)
+
+    try:
+        user_selection = int(input("Enter the desired option: "))
+
+        match user_selection:
+            case 1:
+                product_name = input("bla bla bla: ")
+                Add_New_Customer()
+            case 2:
+                product_name = input("bla bla bla: ")
+                Edit_Customer_Information()
+            case 3:
+                product_name = input("bla bla bla: ")
+                Add_New_Employee()
+            case 4:
+                product_name = input("bla bla bla: ")
+                Edit_Employee_Information()
+            case 5:
+                product_name = input("bla bla bla: ")
+                Add_New_Item_to_Inventory()
+            case 6:
+                product_name = input("bla bla bla: ")
+                Add_Raw_Materials_to_Inventory()
+            case 7:
+                product_name = input("bla bla bla: ")
+                Raw_Material_Purchase_Invoices_Reporting()
+            case 8:    
+                product_name = input("bla bla bla: ")
+                Sell_Products()
+            case 9:    
+                product_name = input("bla bla bla: ")
+                Sales_Invoices_Reporting()
+            case 10:
+                product_name = input("bla bla bla: ")
+                Add_New_Menu_Item()
+            case 11:    
+                product_name = input("bla bla bla: ")
+                Edit_a_Menu_Item()
+            case 12:
+                product_name = input("bla bla bla: ")
+                Delete_a_Menu_Item()
+            case 13:    
+                break
+            
+    except ValueError:
+        print("Invalid input")
+        temp = input("press any key to continue: ")
+
+##########################################################################################################################
+# todo: write a function for any task
 """
 Manager_Menu:
 
@@ -29,14 +92,3 @@ Manager_Menu:
 #   OK همه شو نوشتم و مطمعنم که همیناست و دیگه چیزی اضافه نمیشه و کم هم نمیشه
 """
 
-while True:
-    for i in Manager_Menu:
-        print(i)
-
-    user_selection = int(input("Enter the desired option: "))
-    if user_selection == 1:
-        product_name = input("bla bla bla: ")
-    elif user_selection == 2:
-        product_name = input("Ebla bla bla: ")
-    else:
-        break
